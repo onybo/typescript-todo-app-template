@@ -66,7 +66,7 @@ namespace MvcApplication.Controllers
                     return Request.CreateResponse(HttpStatusCode.InternalServerError);
                 }
 
-                return Request.CreateResponse(HttpStatusCode.OK);
+                return Request.CreateResponse(HttpStatusCode.OK, new {});
             }
             else
             {

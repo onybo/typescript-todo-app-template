@@ -1,5 +1,3 @@
-//// <reference path="..\jquery-1.8.d.ts" />
-/// <reference path="..\knockout-2.2.d.ts" />
 /// <reference path="todo.datacontext.ts" />
 
 module Todo {
@@ -19,7 +17,7 @@ module Todo {
             public TodoItemId: string;
 
             private TodoListId: string;
-            private datacontext: Todo.IDatacontext; //datacontext.saveChangedTodoItem(self)
+            private datacontext: Todo.IDatacontext; 
             save: (newValue: any) => void;
 
             constructor (datacontext: Todo.IDatacontext, data?: TodoItemData) {

@@ -1,8 +1,3 @@
-/// <reference path="..\jquery-1.8.d.ts" />
-/// <reference path="..\jquery.validation-1.10.d.ts" />
-/// <reference path="..\knockout-2.2.d.ts" />
-/// <reference path="todo.todolist.ts" />
-/// <reference path="todo.todoitem.ts" />
 
 module Todo {
     export interface IDatacontext {
@@ -80,18 +75,18 @@ module Todo {
         }
 
         saveChangedTodoItem(todoItem: Todo.Model.TodoItem): JQueryPromise {
-            this.clearErrorMessage(todoItem);
+            this.clearErrorMessage(todoItem); 
             return this.ajaxRequest("put", this.todoItemUrl(todoItem.TodoItemId), todoItem)
-                .fail(function () {
-                    todoItem.ErrorMessage("Error updating todo item.");
+                .fail(function (jqXHR, textStatus) {
+                    todoItem.ErrorMessage("Error updating todo item." + textStatus);
                 });
         }
 
         saveChangedTodoList(todoList: Todo.Model.TodoList): JQueryPromise {
             this.clearErrorMessage(todoList);
             return this.ajaxRequest("put", this.todoListUrl(todoList.TodoListId), todoList)
-                .fail(function () {
-                    todoList.ErrorMessage("Error updating the todo list title. Please make sure it is non-empty.");
+                .fail(function (jqXHR, textStatus) {
+                    todoList.ErrorMessage("Error updating the todo list title. Please make sure it is non-empty." + textStatus);
                 });
         }
 
@@ -102,7 +97,7 @@ module Todo {
             }
         }
 
-        private ajaxRequest(type: string, url: string, data?: any): JQueryXHR { // Ajax helper
+        private ajaxRequest(type: string, url: string, data?: any): JQueryPromise { // Ajax helper
             var options = {
                 dataType: "json",
                 contentType: "application/json",

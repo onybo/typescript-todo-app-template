@@ -1,6 +1,5 @@
-﻿/// <reference path="..\jquery-1.8.d.ts" />
+﻿/// <reference path="..\jquery.d.ts" />
 /// <reference path="..\knockout-2.2.d.ts" />
-/// <reference path="todo.datacontext.ts" />
 /// <reference path="todo.todoitem.ts" />
 
 module Todo {
@@ -24,7 +23,7 @@ module Todo {
             public TodoListId: string;
             public UserId: string;
 
-            private datacontext: Todo.IDatacontext;  //saveChangedTodoList(self),deleteTodoItem(self)
+            private datacontext: Todo.IDatacontext;  
             private save:  (newValue: string) => void;
 
             constructor (datacontext: Todo.IDatacontext, data?: TodoListData) {
@@ -41,7 +40,7 @@ module Todo {
 
                 this.datacontext = datacontext;
 
-                this.deleteTodo = (todoItem: Todo.Model.TodoItem): JQueryDeferred => {
+                this.deleteTodo = (todoItem: Todo.Model.TodoItem): JQueryPromise => {
                     var self = this;
                     return this.datacontext.deleteTodoItem(todoItem)
                         .done(function () { self.Todos.remove(todoItem); });

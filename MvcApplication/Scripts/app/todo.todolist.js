@@ -1,6 +1,5 @@
-/// <reference path="..\jquery-1.8.d.ts" />
+/// <reference path="..\jquery.d.ts" />
 /// <reference path="..\knockout-2.2.d.ts" />
-/// <reference path="todo.datacontext.ts" />
 /// <reference path="todo.todoitem.ts" />
 var Todo;
 (function (Todo) {

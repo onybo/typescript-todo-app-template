@@ -1,6 +1,3 @@
-/// <reference path="..\knockout-2.2.d.ts" />
-/// <reference path="todo.datacontext.ts" />
-
 declare var todoApp;
 
 module Todo {

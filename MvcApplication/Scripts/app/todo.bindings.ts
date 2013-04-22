@@ -1,5 +1,5 @@
-/// <reference path="..\jquery-1.8.d.ts" />
-/// <reference path="..\jquery.validation-1.10.d.ts" />
+/// <reference path="..\jquery.d.ts" />
+/// <reference path="..\jquery.validation.d.ts" />
 /// <reference path="..\knockout-2.2.d.ts" />
 /// <reference path="..\modernizr-2.6.d.ts" />
 
@@ -17,6 +17,10 @@ ko.bindingHandlers.validate = {
         $(elem).validate();
     }
 };
+
+interface KnockoutStatic {
+    isWriteableObservable(val: any): void;
+}
 
 // Controls whether or not the text in a textbox is selected based on a model property
 ko.bindingHandlers.selected = {
@@ -36,9 +40,6 @@ ko.bindingHandlers.selected = {
     }
 };
 
-interface JQueryKeyEventObject extends JQueryEventObject {
-    keyCode: number;
-}
 
 // Makes a textbox lose focus if you press "enter"
 ko.bindingHandlers.blurOnEnter = {

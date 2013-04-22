@@ -1,8 +1,3 @@
-/// <reference path="..\jquery-1.8.d.ts" />
-/// <reference path="..\jquery.validation-1.10.d.ts" />
-/// <reference path="..\knockout-2.2.d.ts" />
-/// <reference path="todo.todolist.ts" />
-/// <reference path="todo.todoitem.ts" />
 var Todo;
 (function (Todo) {
     var Datacontext = (function () {
@@ -57,14 +52,14 @@ var Todo;
         };
         Datacontext.prototype.saveChangedTodoItem = function (todoItem) {
             this.clearErrorMessage(todoItem);
-            return this.ajaxRequest("put", this.todoItemUrl(todoItem.TodoItemId), todoItem).fail(function () {
-                todoItem.ErrorMessage("Error updating todo item.");
+            return this.ajaxRequest("put", this.todoItemUrl(todoItem.TodoItemId), todoItem).fail(function (jqXHR, textStatus) {
+                todoItem.ErrorMessage("Error updating todo item." + textStatus);
             });
         };
         Datacontext.prototype.saveChangedTodoList = function (todoList) {
             this.clearErrorMessage(todoList);
-            return this.ajaxRequest("put", this.todoListUrl(todoList.TodoListId), todoList).fail(function () {
-                todoList.ErrorMessage("Error updating the todo list title. Please make sure it is non-empty.");
+            return this.ajaxRequest("put", this.todoListUrl(todoList.TodoListId), todoList).fail(function (jqXHR, textStatus) {
+                todoList.ErrorMessage("Error updating the todo list title. Please make sure it is non-empty." + textStatus);
             });
         };
         Datacontext.prototype.clearErrorMessage = function (entity) {
