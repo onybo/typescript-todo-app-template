@@ -17,22 +17,18 @@ var Todo;
                 };
             };
             var showTodoList = function (todoList) {
-                _this.todoLists.unshift(todoList)// Insert new TodoList at the front
-                ;
+                _this.todoLists.unshift(todoList);
             };
             this.deleteTodoList = function (todoList) {
                 _this.todoLists.remove(todoList);
                 datacontext.deleteTodoList(todoList).fail(deleteFailed);
                 function deleteFailed() {
-                    showTodoList(todoList)// re-show the restored list
-                    ;
+                    showTodoList(todoList);
                 }
             };
-            datacontext.getTodoLists(this.todoLists, this.error)// load TodoLists
-            ;
+            datacontext.getTodoLists(this.todoLists, this.error);
         }
         return TodoListViewModel;
     })();
     Todo.TodoListViewModel = TodoListViewModel;    
 })(Todo || (Todo = {}));
-//@ sourceMappingURL=todo.viewmodel.js.map

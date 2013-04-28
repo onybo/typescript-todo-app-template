@@ -1,5 +1,3 @@
-/// <reference path="todo.todolist.ts" />
-/// <reference path="todo.viewmodel.ts" />
 var Todo;
 (function (Todo) {
     var Main = (function () {
@@ -14,7 +12,6 @@ var Todo;
             ko.applyBindings(todoApp.todoListViewModel);
         };
         return Main;
-    })();
-    Todo.Main = Main;    
+    })();    
+    new Main().run();
 })(Todo || (Todo = {}));
-//@ sourceMappingURL=Application.js.map

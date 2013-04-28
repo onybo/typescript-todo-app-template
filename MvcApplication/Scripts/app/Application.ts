@@ -2,7 +2,8 @@
 /// <reference path="todo.viewmodel.ts" />
 
 module Todo {
-    export class Main {
+    
+    class Main {
         run() {
             todoApp = {};
             todoApp.datacontext = new Todo.Datacontext();
@@ -13,4 +14,6 @@ module Todo {
             ko.applyBindings(todoApp.todoListViewModel);
         }
     }
+
+    new Main().run();
 }

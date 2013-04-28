@@ -294,6 +294,13 @@
     <Content Include="Global.asax" />
     <TypeScriptCompile Include="Scripts\app\todo.todoitem.ts" />
     <TypeScriptCompile Include="Scripts\app\Application.ts" />
+    <TypeScriptCompile Include="Scripts\app\ajaxlogin.ts" />
+    <Content Include="Scripts\app\ajaxlogin.js">
+      <DependentUpon>ajaxlogin.ts</DependentUpon>
+    </Content>
+    <Content Include="Scripts\app\ajaxlogin.min.js">
+      <DependentUpon>ajaxlogin.ts</DependentUpon>
+    </Content>
     <Content Include="Scripts\app\Application.js">
       <DependentUpon>Application.ts</DependentUpon>
     </Content>
@@ -369,6 +376,9 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="Scripts\app\ajaxlogin.js.map">
+      <DependentUpon>ajaxlogin.ts</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <Content Include="Scripts\jquery-ui-1.10.2.js" />
@@ -400,7 +410,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="Content\TodoList.css" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Scripts\app\ajaxlogin.js" />
     <Content Include="Images\accent.png" />
     <Content Include="Images\bullet.png" />
     <Content Include="Images\heroAccent.png" />

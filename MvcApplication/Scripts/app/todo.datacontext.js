@@ -16,12 +16,10 @@ var Todo;
             }
         };
         Datacontext.prototype.createTodoItem = function (data) {
-            return new Todo.Model.TodoItem(this, data);// TodoItem is injected by model.js
-            
+            return new Todo.Model.TodoItem(this, data);
         };
         Datacontext.prototype.createTodoList = function (data) {
-            return new Todo.Model.TodoList(this, data);// TodoList is injected by model.js
-            
+            return new Todo.Model.TodoList(this, data);
         };
         Datacontext.prototype.saveNewTodoItem = function (todoItem) {
             this.clearErrorMessage(todoItem);
@@ -68,7 +66,6 @@ var Todo;
             }
         };
         Datacontext.prototype.ajaxRequest = function (type, url, data) {
-            // Ajax helper
             var options = {
                 dataType: "json",
                 contentType: "application/json",
@@ -78,8 +75,7 @@ var Todo;
             };
             return $.ajax(url, options);
         };
-        Datacontext.prototype.todoListUrl = // routes
-        function (id) {
+        Datacontext.prototype.todoListUrl = function (id) {
             return "/api/todolist/" + (id || "");
         };
         Datacontext.prototype.todoItemUrl = function (id) {
@@ -89,4 +85,3 @@ var Todo;
     })();
     Todo.Datacontext = Datacontext;    
 })(Todo || (Todo = {}));
-//@ sourceMappingURL=todo.datacontext.js.map

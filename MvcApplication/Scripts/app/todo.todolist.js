@@ -1,6 +1,3 @@
-/// <reference path="..\jquery.d.ts" />
-/// <reference path="..\knockout-2.2.d.ts" />
-/// <reference path="todo.todoitem.ts" />
 var Todo;
 (function (Todo) {
     (function (Model) {
@@ -8,11 +5,9 @@ var Todo;
             function TodoList(datacontext, data) {
                 var _this = this;
                 data = data || this.defaultTodoListData();
-                // Persisted properties
                 this.TodoListId = data.TodoListId;
                 this.UserId = data.UserId || "to be replaced";
                 this.Title = ko.observable(data.Title || "My todos");
-                // Non-persisted properties
                 this.IsEditingListTitle = ko.observable(false);
                 this.NewTodoTitle = ko.observable();
                 this.ErrorMessage = ko.observable();
@@ -26,7 +21,6 @@ var Todo;
                 this.save = function (newValue) {
                     _this.datacontext.saveChangedTodoList(_this);
                 };
-                // Auto-save when these properties change
                 this.Title.subscribe(this.save);
                 this.Todos = ko.observableArray(this.importTodoItems(data.Todos));
             }
@@ -38,8 +32,7 @@ var Todo;
                     Todos: []
                 };
             };
-            TodoList.prototype.importTodoItems = // convert raw todoItem data objects into array of TodoItems
-            function (todoItems) {
+            TodoList.prototype.importTodoItems = function (todoItems) {
                 var self = this;
                 return $.map(todoItems || [], function (todoItemData) {
                     return self.datacontext.createTodoItem(todoItemData);
@@ -47,7 +40,6 @@ var Todo;
             };
             TodoList.prototype.addTodo = function () {
                 if(this.NewTodoTitle()) {
-                    // need a title to save
                     var todoItem = this.datacontext.createTodoItem({
                         TodoItemId: "0",
                         Title: this.NewTodoTitle(),
@@ -65,4 +57,3 @@ var Todo;
     })(Todo.Model || (Todo.Model = {}));
     var Model = Todo.Model;
 })(Todo || (Todo = {}));
-//@ sourceMappingURL=todo.todolist.js.map

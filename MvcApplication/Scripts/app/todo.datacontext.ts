@@ -1,3 +1,6 @@
+/// <reference path="..\jquery.d.ts" />
+/// <reference path="todo.todolist.ts" />
+/// <reference path="todo.todoitem.ts" />
 
 module Todo {
     export interface IDatacontext {

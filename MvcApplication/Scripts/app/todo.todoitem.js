@@ -1,4 +1,3 @@
-/// <reference path="todo.datacontext.ts" />
 var Todo;
 (function (Todo) {
     (function (Model) {
@@ -6,18 +5,15 @@ var Todo;
             function TodoItem(datacontext, data) {
                 var _this = this;
                 data = data || this.defaultTodoItemData();
-                // Persisted properties
                 this.TodoItemId = data.TodoItemId;
                 this.Title = ko.observable(data.Title);
                 this.IsDone = ko.observable(data.IsDone);
                 this.TodoListId = data.TodoListId;
-                // Non-persisted properties
                 this.ErrorMessage = ko.observable();
                 this.datacontext = datacontext;
                 this.save = function (newValue) {
                     _this.datacontext.saveChangedTodoItem(_this);
                 };
-                // Auto-save when these properties change
                 this.IsDone.subscribe(this.save);
                 this.Title.subscribe(this.save);
             }
@@ -35,4 +31,3 @@ var Todo;
     })(Todo.Model || (Todo.Model = {}));
     var Model = Todo.Model;
 })(Todo || (Todo = {}));
-//@ sourceMappingURL=todo.todoitem.js.map
