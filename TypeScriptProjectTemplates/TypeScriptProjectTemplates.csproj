@@ -1,0 +1,1308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{A3D9B3C3-2168-4A8A-A26C-B68418120A9D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TypeScriptProjectTemplates</RootNamespace>
+    <AssemblyName>TypeScriptProjectTemplates</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <GeneratePkgDefFile>false</GeneratePkgDefFile>
+    <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
+    <IncludeDebugSymbolsInVSIXContainer>false</IncludeDebugSymbolsInVSIXContainer>
+    <IncludeDebugSymbolsInLocalVSIXDeployment>false</IncludeDebugSymbolsInLocalVSIXDeployment>
+    <CopyBuildOutputToOutputDirectory>false</CopyBuildOutputToOutputDirectory>
+    <CopyOutputSymbolsToOutputDirectory>false</CopyOutputSymbolsToOutputDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="PTempls\TsPTempl.cshtml\App_Start\AuthConfig.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\App_Start\BundleConfig.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\App_Start\FilterConfig.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\App_Start\RouteConfig.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\App_Start\WebApiConfig.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\ApiDescriptionExtensions.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\App_Start\HelpPageConfig.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\Controllers\HelpController.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\HelpPageAreaRegistration.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\HelpPageConfigurationExtensions.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\Models\HelpPageApiModel.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\SampleGeneration\ImageSample.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\SampleGeneration\InvalidSample.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\SampleGeneration\ObjectGenerator.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\SampleGeneration\SampleDirection.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\SampleGeneration\TextSample.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\XmlDocumentationProvider.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Controllers\AccountController.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Controllers\HomeController.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Controllers\TodoController.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Controllers\TodoListController.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\favicon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Filters\InitializeSimpleMembershipAttribute.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Global.asax">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Models\AccountModels.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Models\TodoItem.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Models\TodoItemContext.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Models\TodoItemDto.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Models\TodoList.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Models\TodoListDto.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\TypeScriptMVCProjectTemplate.csproj">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\TypeScriptMVCProjectTemplate.vstemplate">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Properties\AssemblyInfo.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\Views\Help\Api.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\Views\Help\Index.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\Views\Shared\_Layout.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\Views\Web.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\Views\_ViewStart.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\packages.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="packages\DotNetOpenAuth.AspNet.4.3.0.13117\DotNetOpenAuth.AspNet.4.3.0.13117.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="packages\DotNetOpenAuth.AspNet.4.3.0.13117\DotNetOpenAuth.AspNet.4.3.0.13117.nuspec" />
+    <None Include="packages\DotNetOpenAuth.Core.4.3.0.13117\content\web.config.transform" />
+    <Content Include="packages\DotNetOpenAuth.Core.4.3.0.13117\DotNetOpenAuth.Core.4.3.0.13117.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="packages\DotNetOpenAuth.Core.4.3.0.13117\DotNetOpenAuth.Core.4.3.0.13117.nuspec" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Consumer.4.3.0.13117\DotNetOpenAuth.OAuth.Consumer.4.3.0.13117.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="packages\DotNetOpenAuth.OAuth.Consumer.4.3.0.13117\DotNetOpenAuth.OAuth.Consumer.4.3.0.13117.nuspec" />
+    <None Include="packages\DotNetOpenAuth.OAuth.Core.4.3.0.13117\content\web.config.transform" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Core.4.3.0.13117\DotNetOpenAuth.OAuth.Core.4.3.0.13117.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="packages\DotNetOpenAuth.OAuth.Core.4.3.0.13117\DotNetOpenAuth.OAuth.Core.4.3.0.13117.nuspec" />
+    <None Include="packages\DotNetOpenAuth.OpenId.Core.4.3.0.13117\content\net35-full\web.config.transform" />
+    <None Include="packages\DotNetOpenAuth.OpenId.Core.4.3.0.13117\content\net40-full\web.config.transform" />
+    <None Include="packages\DotNetOpenAuth.OpenId.Core.4.3.0.13117\content\net45-full\web.config.transform" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.3.0.13117\DotNetOpenAuth.OpenId.Core.4.3.0.13117.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="packages\DotNetOpenAuth.OpenId.Core.4.3.0.13117\DotNetOpenAuth.OpenId.Core.4.3.0.13117.nuspec" />
+    <None Include="packages\DotNetOpenAuth.OpenId.RelyingParty.4.3.0.13117\content\web.config.transform" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.RelyingParty.4.3.0.13117\DotNetOpenAuth.OpenId.RelyingParty.4.3.0.13117.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="packages\DotNetOpenAuth.OpenId.RelyingParty.4.3.0.13117\DotNetOpenAuth.OpenId.RelyingParty.4.3.0.13117.nuspec" />
+    <None Include="packages\EntityFramework.5.0.0\Content\App.config.transform" />
+    <None Include="packages\EntityFramework.5.0.0\Content\Web.config.transform" />
+    <None Include="packages\EntityFramework.5.0.0\EntityFramework.5.0.0.nupkg" />
+    <None Include="packages\EntityFramework.5.0.0\EntityFramework.5.0.0.nuspec" />
+    <None Include="packages\EntityFramework.5.0.0\tools\EntityFramework.PS3.psd1" />
+    <None Include="packages\EntityFramework.5.0.0\tools\EntityFramework.psd1" />
+    <None Include="packages\EntityFramework.5.0.0\tools\EntityFramework.psm1" />
+    <None Include="packages\EntityFramework.5.0.0\tools\init.ps1" />
+    <None Include="packages\EntityFramework.5.0.0\tools\install.ps1" />
+    <None Include="packages\EntityFramework.5.0.0\tools\Redirect.config" />
+    <None Include="packages\EntityFramework.5.0.0\tools\Redirect.VS11.config" />
+    <None Include="packages\jQuery.1.9.1\Content\Scripts\jquery-1.9.1.min.map" />
+    <Content Include="packages\jQuery.1.9.1\jQuery.1.9.1.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="packages\jQuery.1.9.1\jQuery.1.9.1.nuspec" />
+    <None Include="packages\jQuery.1.9.1\Tools\common.ps1" />
+    <None Include="packages\jQuery.1.9.1\Tools\install.ps1" />
+    <None Include="packages\jQuery.1.9.1\Tools\uninstall.ps1" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\jQuery.UI.Combined.1.10.2.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="packages\jQuery.UI.Combined.1.10.2\jQuery.UI.Combined.1.10.2.nuspec" />
+    <None Include="packages\jQuery.UI.Combined.1.10.2\Tools\common.ps1" />
+    <None Include="packages\jQuery.UI.Combined.1.10.2\Tools\install.ps1" />
+    <None Include="packages\jQuery.UI.Combined.1.10.2\Tools\uninstall.ps1" />
+    <Content Include="packages\jQuery.Validation.1.11.1\jQuery.Validation.1.11.1.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="packages\jQuery.Validation.1.11.1\jQuery.Validation.1.11.1.nuspec" />
+    <Content Include="packages\knockoutjs.2.2.1\knockoutjs.2.2.1.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="packages\knockoutjs.2.2.1\knockoutjs.2.2.1.nuspec" />
+    <None Include="packages\Microsoft.AspNet.Mvc.4.0.20710.0\Microsoft.AspNet.Mvc.4.0.20710.0.nupkg" />
+    <None Include="packages\Microsoft.AspNet.Mvc.4.0.20710.0\Microsoft.AspNet.Mvc.4.0.20710.0.nuspec" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.1\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.1.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.1\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.1.nuspec" />
+    <None Include="packages\Microsoft.AspNet.Razor.2.0.20715.0\Microsoft.AspNet.Razor.2.0.20715.0.nupkg" />
+    <None Include="packages\Microsoft.AspNet.Razor.2.0.20715.0\Microsoft.AspNet.Razor.2.0.20715.0.nuspec" />
+    <None Include="packages\Microsoft.AspNet.Web.Optimization.1.0.0\Microsoft.AspNet.Web.Optimization.1.0.0.nupkg" />
+    <None Include="packages\Microsoft.AspNet.Web.Optimization.1.0.0\Microsoft.AspNet.Web.Optimization.1.0.0.nuspec" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.4.0.20710.0\Microsoft.AspNet.WebApi.4.0.20710.0.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="packages\Microsoft.AspNet.WebApi.4.0.20710.0\Microsoft.AspNet.WebApi.4.0.20710.0.nuspec" />
+    <None Include="packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\Microsoft.AspNet.WebApi.Client.4.0.20710.0.nupkg" />
+    <None Include="packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\Microsoft.AspNet.WebApi.Client.4.0.20710.0.nuspec" />
+    <None Include="packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\content\web.config.transform" />
+    <None Include="packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\Microsoft.AspNet.WebApi.Core.4.0.20710.0.nupkg" />
+    <None Include="packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\Microsoft.AspNet.WebApi.Core.4.0.20710.0.nuspec" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\ApiDescriptionExtensions.cs.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\App_Start\HelpPageConfig.cs.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\Controllers\HelpController.cs.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\HelpPage.css.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\HelpPageAreaRegistration.cs.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\HelpPageConfigurationExtensions.cs.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\Models\HelpPageApiModel.cs.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\SampleGeneration\ImageSample.cs.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\SampleGeneration\InvalidSample.cs.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\SampleGeneration\ObjectGenerator.cs.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\SampleGeneration\SampleDirection.cs.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\SampleGeneration\TextSample.cs.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\Views\Help\Api.cshtml.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\Views\Help\Index.cshtml.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\Views\Shared\_Layout.cshtml.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\Views\Web.config" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\Views\_ViewStart.cshtml.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\content\Areas\HelpPage\XmlDocumentationProvider.cs.pp" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\Microsoft.AspNet.WebApi.HelpPage.4.0.0.nupkg" />
+    <None Include="packages\Microsoft.AspNet.WebApi.HelpPage.4.0.0\Microsoft.AspNet.WebApi.HelpPage.4.0.0.nuspec" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.OData.4.0.1\Microsoft.AspNet.WebApi.OData.4.0.1.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="packages\Microsoft.AspNet.WebApi.OData.4.0.1\Microsoft.AspNet.WebApi.OData.4.0.1.nuspec" />
+    <None Include="packages\Microsoft.AspNet.WebApi.Tracing.4.0.0\Microsoft.AspNet.WebApi.Tracing.4.0.0.nupkg" />
+    <None Include="packages\Microsoft.AspNet.WebApi.Tracing.4.0.0\Microsoft.AspNet.WebApi.Tracing.4.0.0.nuspec" />
+    <None Include="packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0.nupkg" />
+    <None Include="packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0.nuspec" />
+    <None Include="packages\Microsoft.AspNet.WebPages.2.0.20710.0\Microsoft.AspNet.WebPages.2.0.20710.0.nupkg" />
+    <None Include="packages\Microsoft.AspNet.WebPages.2.0.20710.0\Microsoft.AspNet.WebPages.2.0.20710.0.nuspec" />
+    <None Include="packages\Microsoft.AspNet.WebPages.Data.2.0.20710.0\Microsoft.AspNet.WebPages.Data.2.0.20710.0.nupkg" />
+    <None Include="packages\Microsoft.AspNet.WebPages.Data.2.0.20710.0\Microsoft.AspNet.WebPages.Data.2.0.20710.0.nuspec" />
+    <None Include="packages\Microsoft.AspNet.WebPages.OAuth.2.0.20710.0\Microsoft.AspNet.WebPages.OAuth.2.0.20710.0.nupkg" />
+    <None Include="packages\Microsoft.AspNet.WebPages.OAuth.2.0.20710.0\Microsoft.AspNet.WebPages.OAuth.2.0.20710.0.nuspec" />
+    <None Include="packages\Microsoft.AspNet.WebPages.WebData.2.0.20710.0\Microsoft.AspNet.WebPages.WebData.2.0.20710.0.nupkg" />
+    <None Include="packages\Microsoft.AspNet.WebPages.WebData.2.0.20710.0\Microsoft.AspNet.WebPages.WebData.2.0.20710.0.nuspec" />
+    <Content Include="packages\Microsoft.Data.Edm.5.4.0\Microsoft.Data.Edm.5.4.0.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="packages\Microsoft.Data.Edm.5.4.0\Microsoft.Data.Edm.5.4.0.nuspec" />
+    <Content Include="packages\Microsoft.Data.OData.5.4.0\Microsoft.Data.OData.5.4.0.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="packages\Microsoft.Data.OData.5.4.0\Microsoft.Data.OData.5.4.0.nuspec" />
+    <Content Include="packages\Microsoft.jQuery.Unobtrusive.Ajax.2.0.30116.0\Microsoft.jQuery.Unobtrusive.Ajax.2.0.30116.0.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="packages\Microsoft.jQuery.Unobtrusive.Ajax.2.0.30116.0\Microsoft.jQuery.Unobtrusive.Ajax.2.0.30116.0.nuspec" />
+    <Content Include="packages\Microsoft.jQuery.Unobtrusive.Validation.2.0.30116.0\Microsoft.jQuery.Unobtrusive.Validation.2.0.30116.0.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="packages\Microsoft.jQuery.Unobtrusive.Validation.2.0.30116.0\Microsoft.jQuery.Unobtrusive.Validation.2.0.30116.0.nuspec" />
+    <None Include="packages\Microsoft.Net.Http.2.0.20710.0\lib\net45\_._" />
+    <None Include="packages\Microsoft.Net.Http.2.0.20710.0\Microsoft.Net.Http.2.0.20710.0.nupkg" />
+    <None Include="packages\Microsoft.Net.Http.2.0.20710.0\Microsoft.Net.Http.2.0.20710.0.nuspec" />
+    <None Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\Microsoft.Web.Infrastructure.1.0.0.0.nupkg" />
+    <None Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\Microsoft.Web.Infrastructure.1.0.0.0.nuspec" />
+    <None Include="packages\Modernizr.2.6.2\Modernizr.2.6.2.nupkg" />
+    <None Include="packages\Modernizr.2.6.2\Modernizr.2.6.2.nuspec" />
+    <None Include="packages\Modernizr.2.6.2\Tools\common.ps1" />
+    <None Include="packages\Modernizr.2.6.2\Tools\install.ps1" />
+    <None Include="packages\Modernizr.2.6.2\Tools\uninstall.ps1" />
+    <Content Include="packages\Newtonsoft.Json.5.0.4\Newtonsoft.Json.5.0.4.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="packages\Newtonsoft.Json.5.0.4\Newtonsoft.Json.5.0.4.nuspec" />
+    <None Include="packages\repositories.config" />
+    <Content Include="packages\System.Spatial.5.4.0\System.Spatial.5.4.0.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="packages\System.Spatial.5.4.0\System.Spatial.5.4.0.nuspec" />
+    <None Include="packages\WebGrease.1.3.0\WebGrease.1.3.0.nupkg" />
+    <None Include="packages\WebGrease.1.3.0\WebGrease.1.3.0.nuspec" />
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\ajaxlogin.js.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\Application.js.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\todo.bindings.js.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\todo.datacontext.js.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\todo.todoitem.js.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\todo.todolist.js.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\todo.viewmodel.js.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\jquery-1.9.1.min.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Views\Account\ExternalLoginConfirmation.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Views\Account\ExternalLoginFailure.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Views\Account\Manage.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Views\Account\_ChangePasswordPartial.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Views\Account\_ExternalLoginsListPartial.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Views\Account\_RemoveExternalLoginsPartial.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Views\Account\_SetPasswordPartial.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Views\Home\Index.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Views\Home\_Login.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Views\Home\_Register.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Views\Shared\Error.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Views\Shared\_Layout.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Views\Shared\_UserSettings.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Views\Web.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Views\_ViewStart.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Web.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="source.extension.vsixmanifest">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PTempls\TsPTempl.cshtml\App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PTempls\TsPTempl.cshtml\Areas\HelpPage\HelpPage.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\Site.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\images\animated-overlay.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\images\ui-icons_222222_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\images\ui-icons_2e83ff_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\images\ui-icons_454545_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\images\ui-icons_888888_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\images\ui-icons_cd0a0a_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\jquery-ui.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\jquery.ui.accordion.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\jquery.ui.all.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\jquery.ui.autocomplete.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\jquery.ui.base.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\jquery.ui.button.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\jquery.ui.core.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\jquery.ui.datepicker.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\jquery.ui.dialog.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\jquery.ui.menu.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\jquery.ui.progressbar.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\jquery.ui.resizable.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\jquery.ui.selectable.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\jquery.ui.slider.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\jquery.ui.spinner.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\jquery.ui.tabs.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\jquery.ui.theme.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\jquery.ui.tooltip.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\images\animated-overlay.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\images\ui-icons_222222_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\images\ui-icons_454545_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\images\ui-icons_888888_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\jquery-ui.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\jquery.ui.accordion.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\jquery.ui.autocomplete.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\jquery.ui.button.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\jquery.ui.core.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\jquery.ui.datepicker.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\jquery.ui.dialog.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\jquery.ui.menu.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\jquery.ui.progressbar.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\jquery.ui.resizable.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\jquery.ui.selectable.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\jquery.ui.slider.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\jquery.ui.spinner.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\jquery.ui.tabs.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\jquery.ui.theme.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\themes\base\minified\jquery.ui.tooltip.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Content\TodoList.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Images\accent.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Images\bullet.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Images\heroAccent.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Images\orderedList0.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Images\orderedList1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Images\orderedList2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Images\orderedList3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Images\orderedList4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Images\orderedList5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Images\orderedList6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Images\orderedList7.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Images\orderedList8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Images\orderedList9.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="packages\DotNetOpenAuth.AspNet.4.3.0.13117\lib\net40-full\DotNetOpenAuth.AspNet.dll" />
+    <Content Include="packages\DotNetOpenAuth.AspNet.4.3.0.13117\lib\net40-full\DotNetOpenAuth.AspNet.xml" />
+    <Content Include="packages\DotNetOpenAuth.AspNet.4.3.0.13117\lib\net45-full\DotNetOpenAuth.AspNet.dll" />
+    <Content Include="packages\DotNetOpenAuth.AspNet.4.3.0.13117\lib\net45-full\DotNetOpenAuth.AspNet.xml" />
+    <Content Include="packages\Newtonsoft.Json.5.0.4\lib\net20\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.5.0.4\lib\net20\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.5.0.4\lib\net35\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.5.0.4\lib\net35\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.5.0.4\lib\net40\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.5.0.4\lib\net40\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.5.0.4\lib\net45\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.5.0.4\lib\net45\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.5.0.4\lib\netcore45\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.5.0.4\lib\netcore45\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.5.0.4\lib\portable-net40+sl4+wp7+win8\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.5.0.4\lib\portable-net40+sl4+wp7+win8\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.5.0.4\lib\portable-net45+wp80+win8\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.5.0.4\lib\portable-net45+wp80+win8\Newtonsoft.Json.xml" />
+    <Content Include="packages\DotNetOpenAuth.Core.4.3.0.13117\lib\net35-full\DotNetOpenAuth.Core.dll" />
+    <Content Include="packages\DotNetOpenAuth.Core.4.3.0.13117\lib\net35-full\DotNetOpenAuth.Core.xml" />
+    <Content Include="packages\DotNetOpenAuth.Core.4.3.0.13117\lib\net40-full\DotNetOpenAuth.Core.dll" />
+    <Content Include="packages\DotNetOpenAuth.Core.4.3.0.13117\lib\net40-full\DotNetOpenAuth.Core.xml" />
+    <Content Include="packages\DotNetOpenAuth.Core.4.3.0.13117\lib\net45-full\DotNetOpenAuth.Core.dll" />
+    <Content Include="packages\DotNetOpenAuth.Core.4.3.0.13117\lib\net45-full\DotNetOpenAuth.Core.xml" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Consumer.4.3.0.13117\lib\net35-full\DotNetOpenAuth.OAuth.Consumer.dll" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Consumer.4.3.0.13117\lib\net35-full\DotNetOpenAuth.OAuth.Consumer.xml" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Consumer.4.3.0.13117\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Consumer.4.3.0.13117\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.xml" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Consumer.4.3.0.13117\lib\net45-full\DotNetOpenAuth.OAuth.Consumer.dll" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Consumer.4.3.0.13117\lib\net45-full\DotNetOpenAuth.OAuth.Consumer.xml" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Core.4.3.0.13117\lib\net35-full\DotNetOpenAuth.OAuth.dll" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Core.4.3.0.13117\lib\net35-full\DotNetOpenAuth.OAuth.xml" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Core.4.3.0.13117\lib\net40-full\DotNetOpenAuth.OAuth.dll" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Core.4.3.0.13117\lib\net40-full\DotNetOpenAuth.OAuth.xml" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Core.4.3.0.13117\lib\net45-full\DotNetOpenAuth.OAuth.dll" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Core.4.3.0.13117\lib\net45-full\DotNetOpenAuth.OAuth.xml" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.3.0.13117\lib\net35-full\DotNetOpenAuth.OpenId.dll" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.3.0.13117\lib\net35-full\DotNetOpenAuth.OpenId.xml" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.3.0.13117\lib\net35-full\Mono.Math.dll" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.3.0.13117\lib\net35-full\Mono.Math.xml" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.3.0.13117\lib\net35-full\Org.Mentalis.Security.Cryptography.dll" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.3.0.13117\lib\net35-full\Org.Mentalis.Security.Cryptography.xml" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.3.0.13117\lib\net40-full\DotNetOpenAuth.OpenId.dll" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.3.0.13117\lib\net40-full\DotNetOpenAuth.OpenId.xml" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.3.0.13117\lib\net40-full\Mono.Math.dll" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.3.0.13117\lib\net40-full\Mono.Math.xml" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.3.0.13117\lib\net40-full\Org.Mentalis.Security.Cryptography.dll" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.3.0.13117\lib\net40-full\Org.Mentalis.Security.Cryptography.xml" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.3.0.13117\lib\net45-full\DotNetOpenAuth.OpenId.dll" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.3.0.13117\lib\net45-full\DotNetOpenAuth.OpenId.xml" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.3.0.13117\lib\net45-full\Mono.Math.dll" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.3.0.13117\lib\net45-full\Mono.Math.xml" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.3.0.13117\lib\net45-full\Org.Mentalis.Security.Cryptography.dll" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.3.0.13117\lib\net45-full\Org.Mentalis.Security.Cryptography.xml" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.RelyingParty.4.3.0.13117\lib\net35-full\DotNetOpenAuth.OpenId.RelyingParty.dll" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.RelyingParty.4.3.0.13117\lib\net35-full\DotNetOpenAuth.OpenId.RelyingParty.xml" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.RelyingParty.4.3.0.13117\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.RelyingParty.4.3.0.13117\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.xml" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.RelyingParty.4.3.0.13117\lib\net45-full\DotNetOpenAuth.OpenId.RelyingParty.dll" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.RelyingParty.4.3.0.13117\lib\net45-full\DotNetOpenAuth.OpenId.RelyingParty.xml" />
+    <Content Include="packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll" />
+    <Content Include="packages\EntityFramework.5.0.0\lib\net40\EntityFramework.xml" />
+    <Content Include="packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll" />
+    <Content Include="packages\EntityFramework.5.0.0\lib\net45\EntityFramework.xml" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\about_EntityFramework.help.txt" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\EntityFramework.PowerShell.dll" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\EntityFramework.PowerShell.Utility.dll" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\migrate.exe" />
+    <Content Include="packages\jQuery.1.9.1\Content\Scripts\jquery-1.9.1-vsdoc.js" />
+    <Content Include="packages\jQuery.1.9.1\Content\Scripts\jquery-1.9.1.js" />
+    <Content Include="packages\jQuery.1.9.1\Content\Scripts\jquery-1.9.1.min.js" />
+    <Content Include="packages\jQuery.1.9.1\Tools\jquery-1.9.1.intellisense.js" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\images\animated-overlay.gif" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\jquery-ui.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\jquery.ui.all.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\jquery.ui.base.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\jquery.ui.button.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\jquery.ui.core.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\jquery.ui.menu.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\jquery.ui.spinner.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\jquery.ui.tooltip.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\images\animated-overlay.gif" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\jquery.ui.menu.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\jquery.ui.spinner.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Content\themes\base\minified\jquery.ui.tooltip.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Scripts\jquery-ui-1.10.2.js" />
+    <Content Include="packages\jQuery.UI.Combined.1.10.2\Content\Scripts\jquery-ui-1.10.2.min.js" />
+    <Content Include="packages\jQuery.Validation.1.11.1\Content\Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="packages\jQuery.Validation.1.11.1\Content\Scripts\jquery.validate.js" />
+    <Content Include="packages\jQuery.Validation.1.11.1\Content\Scripts\jquery.validate.min.js" />
+    <Content Include="packages\knockoutjs.2.2.1\Content\Scripts\knockout-2.2.1.debug.js" />
+    <Content Include="packages\knockoutjs.2.2.1\Content\Scripts\knockout-2.2.1.js" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.xml" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.1\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll" />
+    <Content Include="packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll" />
+    <Content Include="packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.xml" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.OData.4.0.1\lib\net40\System.Web.Http.OData.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.OData.4.0.1\lib\net40\System.Web.Http.Odata.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Tracing.4.0.0\lib\net40\System.Web.Http.Tracing.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Tracing.4.0.0\lib\net40\System.Web.Http.Tracing.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Tracing.4.0.0\ReadMe.txt" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.Data.2.0.20710.0\lib\net40\WebMatrix.Data.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.Data.2.0.20710.0\lib\net40\WebMatrix.Data.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.OAuth.2.0.20710.0\lib\net40\Microsoft.Web.WebPages.OAuth.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.OAuth.2.0.20710.0\lib\net40\Microsoft.Web.WebPages.OAuth.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.WebData.2.0.20710.0\lib\net40\WebMatrix.WebData.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.WebData.2.0.20710.0\lib\net40\WebMatrix.WebData.xml" />
+    <Content Include="packages\Microsoft.Data.Edm.5.4.0\lib\net40\de\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="packages\Microsoft.Data.Edm.5.4.0\lib\net40\es\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="packages\Microsoft.Data.Edm.5.4.0\lib\net40\fr\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="packages\Microsoft.Data.Edm.5.4.0\lib\net40\it\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="packages\Microsoft.Data.Edm.5.4.0\lib\net40\ja\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="packages\Microsoft.Data.Edm.5.4.0\lib\net40\ko\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="packages\Microsoft.Data.Edm.5.4.0\lib\net40\Microsoft.Data.Edm.dll" />
+    <Content Include="packages\Microsoft.Data.Edm.5.4.0\lib\net40\Microsoft.Data.Edm.xml" />
+    <Content Include="packages\Microsoft.Data.Edm.5.4.0\lib\net40\ru\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="packages\Microsoft.Data.Edm.5.4.0\lib\net40\zh-Hans\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="packages\Microsoft.Data.Edm.5.4.0\lib\net40\zh-Hant\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="packages\Microsoft.Data.Edm.5.4.0\lib\sl4\de\Microsoft.Data.Edm.SL.resources.dll" />
+    <Content Include="packages\Microsoft.Data.Edm.5.4.0\lib\sl4\es\Microsoft.Data.Edm.SL.resources.dll" />
+    <Content Include="packages\Microsoft.Data.Edm.5.4.0\lib\sl4\fr\Microsoft.Data.Edm.SL.resources.dll" />
+    <Content Include="packages\Microsoft.Data.Edm.5.4.0\lib\sl4\it\Microsoft.Data.Edm.SL.resources.dll" />
+    <Content Include="packages\Microsoft.Data.Edm.5.4.0\lib\sl4\ja\Microsoft.Data.Edm.SL.resources.dll" />
+    <Content Include="packages\Microsoft.Data.Edm.5.4.0\lib\sl4\ko\Microsoft.Data.Edm.SL.resources.dll" />
+    <Content Include="packages\Microsoft.Data.Edm.5.4.0\lib\sl4\Microsoft.Data.Edm.SL.dll" />
+    <Content Include="packages\Microsoft.Data.Edm.5.4.0\lib\sl4\Microsoft.Data.Edm.SL.xml" />
+    <Content Include="packages\Microsoft.Data.Edm.5.4.0\lib\sl4\ru\Microsoft.Data.Edm.SL.resources.dll" />
+    <Content Include="packages\Microsoft.Data.Edm.5.4.0\lib\sl4\zh-Hans\Microsoft.Data.Edm.SL.resources.dll" />
+    <Content Include="packages\Microsoft.Data.Edm.5.4.0\lib\sl4\zh-Hant\Microsoft.Data.Edm.SL.resources.dll" />
+    <Content Include="packages\Microsoft.Data.OData.5.4.0\lib\net40\de\Microsoft.Data.OData.resources.dll" />
+    <Content Include="packages\Microsoft.Data.OData.5.4.0\lib\net40\es\Microsoft.Data.OData.resources.dll" />
+    <Content Include="packages\Microsoft.Data.OData.5.4.0\lib\net40\fr\Microsoft.Data.OData.resources.dll" />
+    <Content Include="packages\Microsoft.Data.OData.5.4.0\lib\net40\it\Microsoft.Data.OData.resources.dll" />
+    <Content Include="packages\Microsoft.Data.OData.5.4.0\lib\net40\ja\Microsoft.Data.OData.resources.dll" />
+    <Content Include="packages\Microsoft.Data.OData.5.4.0\lib\net40\ko\Microsoft.Data.OData.resources.dll" />
+    <Content Include="packages\Microsoft.Data.OData.5.4.0\lib\net40\Microsoft.Data.OData.dll" />
+    <Content Include="packages\Microsoft.Data.OData.5.4.0\lib\net40\Microsoft.Data.OData.xml" />
+    <Content Include="packages\Microsoft.Data.OData.5.4.0\lib\net40\ru\Microsoft.Data.OData.resources.dll" />
+    <Content Include="packages\Microsoft.Data.OData.5.4.0\lib\net40\zh-Hans\Microsoft.Data.OData.resources.dll" />
+    <Content Include="packages\Microsoft.Data.OData.5.4.0\lib\net40\zh-Hant\Microsoft.Data.OData.resources.dll" />
+    <Content Include="packages\Microsoft.Data.OData.5.4.0\lib\sl4\de\Microsoft.Data.OData.SL.resources.dll" />
+    <Content Include="packages\Microsoft.Data.OData.5.4.0\lib\sl4\es\Microsoft.Data.OData.SL.resources.dll" />
+    <Content Include="packages\Microsoft.Data.OData.5.4.0\lib\sl4\fr\Microsoft.Data.OData.SL.resources.dll" />
+    <Content Include="packages\Microsoft.Data.OData.5.4.0\lib\sl4\it\Microsoft.Data.OData.SL.resources.dll" />
+    <Content Include="packages\Microsoft.Data.OData.5.4.0\lib\sl4\ja\Microsoft.Data.OData.SL.resources.dll" />
+    <Content Include="packages\Microsoft.Data.OData.5.4.0\lib\sl4\ko\Microsoft.Data.OData.SL.resources.dll" />
+    <Content Include="packages\Microsoft.Data.OData.5.4.0\lib\sl4\Microsoft.Data.OData.SL.dll" />
+    <Content Include="packages\Microsoft.Data.OData.5.4.0\lib\sl4\Microsoft.Data.OData.SL.xml" />
+    <Content Include="packages\Microsoft.Data.OData.5.4.0\lib\sl4\ru\Microsoft.Data.OData.SL.resources.dll" />
+    <Content Include="packages\Microsoft.Data.OData.5.4.0\lib\sl4\zh-Hans\Microsoft.Data.OData.SL.resources.dll" />
+    <Content Include="packages\Microsoft.Data.OData.5.4.0\lib\sl4\zh-Hant\Microsoft.Data.OData.SL.resources.dll" />
+    <Content Include="packages\Microsoft.jQuery.Unobtrusive.Ajax.2.0.30116.0\Content\Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="packages\Microsoft.jQuery.Unobtrusive.Ajax.2.0.30116.0\Content\Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="packages\Microsoft.jQuery.Unobtrusive.Validation.2.0.30116.0\Content\Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="packages\Microsoft.jQuery.Unobtrusive.Validation.2.0.30116.0\Content\Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll" />
+    <Content Include="packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll" />
+    <Content Include="packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.xml" />
+    <Content Include="packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.xml" />
+    <Content Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="packages\Modernizr.2.6.2\Content\Scripts\modernizr-2.6.2.js" />
+    <Content Include="packages\System.Spatial.5.4.0\lib\net40\de\System.Spatial.resources.dll" />
+    <Content Include="packages\System.Spatial.5.4.0\lib\net40\es\System.Spatial.resources.dll" />
+    <Content Include="packages\System.Spatial.5.4.0\lib\net40\fr\System.Spatial.resources.dll" />
+    <Content Include="packages\System.Spatial.5.4.0\lib\net40\it\System.Spatial.resources.dll" />
+    <Content Include="packages\System.Spatial.5.4.0\lib\net40\ja\System.Spatial.resources.dll" />
+    <Content Include="packages\System.Spatial.5.4.0\lib\net40\ko\System.Spatial.resources.dll" />
+    <Content Include="packages\System.Spatial.5.4.0\lib\net40\ru\System.Spatial.resources.dll" />
+    <Content Include="packages\System.Spatial.5.4.0\lib\net40\System.Spatial.dll" />
+    <Content Include="packages\System.Spatial.5.4.0\lib\net40\System.Spatial.xml" />
+    <Content Include="packages\System.Spatial.5.4.0\lib\net40\zh-Hans\System.Spatial.resources.dll" />
+    <Content Include="packages\System.Spatial.5.4.0\lib\net40\zh-Hant\System.Spatial.resources.dll" />
+    <Content Include="packages\System.Spatial.5.4.0\lib\sl4\de\System.Spatial.SL.resources.dll" />
+    <Content Include="packages\System.Spatial.5.4.0\lib\sl4\es\System.Spatial.SL.resources.dll" />
+    <Content Include="packages\System.Spatial.5.4.0\lib\sl4\fr\System.Spatial.SL.resources.dll" />
+    <Content Include="packages\System.Spatial.5.4.0\lib\sl4\it\System.Spatial.SL.resources.dll" />
+    <Content Include="packages\System.Spatial.5.4.0\lib\sl4\ja\System.Spatial.SL.resources.dll" />
+    <Content Include="packages\System.Spatial.5.4.0\lib\sl4\ko\System.Spatial.SL.resources.dll" />
+    <Content Include="packages\System.Spatial.5.4.0\lib\sl4\ru\System.Spatial.SL.resources.dll" />
+    <Content Include="packages\System.Spatial.5.4.0\lib\sl4\System.Spatial.SL.dll" />
+    <Content Include="packages\System.Spatial.5.4.0\lib\sl4\System.Spatial.SL.xml" />
+    <Content Include="packages\System.Spatial.5.4.0\lib\sl4\zh-Hans\System.Spatial.SL.resources.dll" />
+    <Content Include="packages\System.Spatial.5.4.0\lib\sl4\zh-Hant\System.Spatial.SL.resources.dll" />
+    <Content Include="packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll" />
+    <Content Include="packages\WebGrease.1.3.0\lib\WebGrease.dll" />
+    <Content Include="packages\WebGrease.1.3.0\tools\WG.exe" />
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\ajaxlogin.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\ajaxlogin.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\ajaxlogin.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\Application.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\Application.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\Application.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\todo.bindings.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\todo.bindings.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\todo.bindings.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\todo.datacontext.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\todo.datacontext.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\todo.datacontext.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\todo.model.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\todo.todoitem.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\todo.todoitem.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\todo.todoitem.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\todo.todolist.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\todo.todolist.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\todo.todolist.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\todo.viewmodel.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\todo.viewmodel.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\app\todo.viewmodel.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\jquery-1.9.1.intellisense.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\jquery-1.9.1.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\jquery-1.9.1.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\jquery-ui-1.10.2.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\jquery-ui-1.10.2.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\jquery.d.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\jquery.unobtrusive-ajax.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\jquery.unobtrusive-ajax.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\jquery.validate-vsdoc.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\jquery.validate.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\jquery.validate.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\jquery.validate.unobtrusive.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\jquery.validate.unobtrusive.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\jquery.validation.d.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\knockout-2.2.1.debug.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\knockout-2.2.1.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\knockout-2.2.d.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\knockout.mapping-2.0.d.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\modernizr-2.6.2.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\modernizr-2.6.d.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\require.d.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\require.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PTempls\TsPTempl.cshtml\Scripts\_references.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PTempls\TsPTempl.cshtml\Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PTempls\TsPTempl.cshtml\Properties\AssemblyInfo.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
